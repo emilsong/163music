@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>网易云音乐 FOR CHROME</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<!--body start-->
+
+<header class="header">
+<div class="face">
+<a><img src="img/logo.png"/></a>
+</div>
+
+<div class="title">
+<h1>正在播放的歌单</h1>
+<h2><a class="author">歌单作者</a></h2>
+</div>
+
+<div class="cover">
+<img src="img/cover.png" />
+</div>
+
+</header>
+
+<div class="wrap">
+
+<section class="player">
+<div class="cd">
+<a class="ctrl play"></a>
+<p class="border"></p>
+<img src="img/cover.png" class="pausing"/>
+</div>
+<b class="share"></b>
+<b class="fav" id="favBtn" title="添加到我喜欢的"></b>
+<b class="prev"></b>
+<b class="cycle"></b>
+<b class="next"></b>
+<i class="timer"></i>
+</section>
+
+<h5 class="lyric" title="点击查看详细">歌词信息</h5>
+<h5 class="info">歌曲信息</h5>
+
+
+
+<section class="body">
+
+<footer class="footer">
+</footer>
+
+<nav>
+<ul>
+<li class="hover">最热</li>
+<li>最新</li>
+<li>分类</li>
+<li>搜索</li>
+<li>DJ</li>
+<li title="我创建的和收藏的歌单都在这里">收藏</li>
+</ul>
+<!--<div>
+<input type="text" placeholder="搜索歌手"/>
+</div>-->
+<a class="arrow"></a>
+</nav>
+
+<div class="list">
+	<ul class="rank clearfix">
+		<li><b>语种</b><a>华语</a><a>欧美</a><a>日语</a><a>韩语</a><a>粤语</a><a>小语种</a></li>
+		<li><b>场景</b><a>清晨</a><a>黄昏</a><a>夜晚</a><a>学习</a><a>工作</a><a>午休</a><a>下午茶</a><a>地铁</a><a>驾车</a><a>运动</a><a>缠绵</a><a>聚会</a><a>度假</a><a>旅行</a><a>散步</a><a>校园</a><a>酒吧</a></li>
+		<li><b>风格</b><a>流行</a><a>摇滚</a><a>民谣</a><a>电子</a><a>说唱</a><a>轻音乐</a><a>爵士</a><a>乡村</a><a>R&B/Soul</a><a>古典</a><a>民族</a><a>英伦</a><a>金属</a><a>朋克</a><a>蓝调</a></li>
+		<li><b>情感</b><a>怀旧</a><a>清新</a><a>浪漫</a><a>性感</a><a>伤感</a><a>治愈</a><a>放松</a><a>悲伤</a><a>温暖</a><a>孤独</a><a>感动</a><a>兴奋</a><a>快乐</a><a>安静</a><a>思念</a></li>
+		<li><b>主题</b><a>动漫</a><a>影视</a><a>游戏</a><a>70后</a><a>80后</a><a>90后</a><a>网络歌曲</a><a>KTV</a><a>经典</a><a>翻唱</a><a>吉他</a><a>钢琴</a><a>器乐</a><a>儿童</a><a>榜单</a></li>
+	</ul>
+	<ul class="search clearfix">
+		<p class="box">
+			<input type="text" id="keyword" placeholder="输入关键字搜索歌单"/><button>搜索</button>
+		</p>
+		
+	</ul>
+	<ul class="collection clearfix"></ul>
+	<ul class="radio clearfix"></ul>
+	<ul class="singer clearfix"></ul>
+</div>
+
+<!-- songlist start-->
+<div class="song">
+	<div class="sider"></div>
+	<div class="songs">
+		<div class="bar">
+			<a class="s-title"></a>
+			<a class="s-fav"></a>
+			<a class="s-pic">
+				<img src="img/cover.png"/>
+			</a>
+			<a class="s-author"></a>
+			
+		</div>
+<div class="s-wrap">
+		<ul class="s-list">
+		</ul>
+
+		</div>
+
+
+	</div>
+
+</div>
+<!--songlist end-->
+
+</section>
+
+<section class="login">
+	<a class="close">×</a>
+	<img src="img/logo-option.png"/>
+	<p><a href="http://music.163.com/" target="_blank">请到网易云音乐官方网站登录，登录再访问插件</a></p>
+</section>
+
+
+<section class="tips"></section>
+
+</div>
+
+
+<img class="loading" alt="正在努力加载中。。。" src="img/loading.gif"/>
+
+
+<!--body end-->
+<script type="text/javascript" src="js/lib.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
+
+

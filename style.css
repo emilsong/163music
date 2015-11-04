@@ -1,0 +1,263 @@
+*{margin:0px;padding:0px;font-weight: normal; list-style: none; font-family: Microsoft Yahei,Arial}
+a:focus{outline:none;}
+a{cursor:pointer; text-decoration: none; color: #666; display: block;}
+body{background: url(img/bg.png) repeat-x;background-size: 100%;}
+header{width: 310px; padding-bottom: 1px; border-bottom: 1px solid #D81817; height: 46px; margin: 8px 5px 0px 5px}
+header.up{border-bottom: 1px solid #fff; }
+header .face img{width:38px; height: 38px; border-radius: 36px;}
+header .face a:hover{}
+header .cover img{width:45px; height: 45px;}
+header .face,header .title{float: left;}
+header .cover{float: right;}
+header .face{margin-right: 6px; padding-top: 4px;}
+header .title h1{font-size: 14px;line-height: 26px;width: 200px;overflow: hidden;height: 26px;}
+header .title h2{font-size: 12px;}
+.player{ width: 320px; margin: 34px 0 10px 0;}
+.player .cd .border{width: 194px; height: 194px;}
+.player .cd{position: relative; margin: 0 auto; width: 200px;}
+.player .cd img{width: 200px; height: 200px;border-radius: 200px; z-index: 1;margin: 1px 0 0 1px;-webkit-animation:play 12s linear 0s infinite ;}
+.player .cd .border{position: absolute;top: 0px;left: 0px;z-index: 2;border: 6px solid #fff;
+	border-radius: 200px;opacity: 0.9; box-shadow: 0px 1px 3px #999;}
+.player .cd .ctrl{width: 64px;height: 64px;position: absolute;background: url(img/cd.png) no-repeat;z-index: 10;top: 70px;left: 70px;}
+.player .cd .pause{background-position: 0 -64px;}
+.player .cd .play{background-position: 0 0;}
+.player .cycle{background-position: 0 -330px;width: 18px;height: 15px;top: 22px;right: 12px; }
+.player .cycle1{background-position: 0 -311px;}
+.player b{background: url(img/btn.png) no-repeat; width: 30px; height: 26px; display: block; float: right; cursor: pointer; position: absolute;}
+.player .share{background-position: 0 0; top:200px; left: 12px;  display: none;}
+.player .fav{ background-position: 0 -28px; top:200px; right: 12px; -webkit-filter: grayscale(100%); opacity: 0.5;display: none;}
+.player .fav:hover,.player .faved{-webkit-filter: grayscale(0%); opacity: 1;  }
+.player .prev{height: 28px; background-position: 0 -263px; top:114px; left: 12px; display: none;}
+.player .next{height: 28px; background-position: 0 -235px; top:114px; right: 12px;display: none;}
+.player i{position: absolute;top: 4px;right: 10px;font-size: 11px; font-style: normal; color: #999;}
+h5{height: 30px; padding: 2px 10px; width: 300px;overflow: hidden;}
+footer{background: url(img/bar.png); height: 21px; width: 320px; position: absolute; z-index: 5; top: 0; cursor: pointer;}
+footer:hover{ background-position: 0 -21px}
+.wrap{height: 306px; width: 320px;overflow: hidden; position: relative;}
+.body{display: block; width: 320px; position: absolute; top:285px; background-color: #fcfcfd; height: 308px; z-index: 20}
+nav{background: url(img/bar.png) 0 -42px; width: 320px; height: 40px; border-bottom: 1px solid #E60050}
+nav ul{padding-left: 10px;}
+nav ul li{float: left;  font-size: 12px; padding: 9px 0px; margin: 4px 10px 0px 10px; cursor: pointer;}
+nav ul li:hover,nav ul li.hover{border-bottom: 3px solid #D81817}
+nav div{float: left; margin-left: 10px; padding-top: 10px}
+nav div input{width: 90px; border: 1px solid #ccc; font-size: 12px; line-height: 20px; height: 20px; padding-left: 2px; display: none;}
+nav a{float: right; background: url(img/btn.png) 5px -57px no-repeat; width: 11px; height: 6px; padding: 5px; margin-top:12px; margin-right: 10px;}
+nav a:hover{-webkit-transform:rotate(180deg);}
+
+.subnav{background-color: #f5f5f6; border-bottom: 1px solid #C5DD9B; height: 26px; clear: both; position: absolute; width: 320px; z-index: 10; }
+.subnav dl{ margin: 0 auto; width: 174px; }
+.subnav dl dd{float: left; font-size: 12px; line-height: 24px; margin: 0 5px; cursor: pointer;}
+.subnav dl dd:hover,.subnav dl dd.hover{border-bottom: 3px solid #C5DD9B}
+
+.list{width:360px; height: 260px; overflow-y:scroll  }
+.list ul{width: 320px; padding-top: 16px;}
+.list ul li p{padding: 1px; border: 1px solid #ccc; width: 60px; height: 60px; margin: 0 auto; cursor: pointer;}
+.list ul li p a{display: none;}
+.list ul li em{font-style: normal;font-size: 12px;line-height: 24px;display: block;text-align: center; height: 24px; overflow: hidden;}
+.list ul li p:hover a{background: url(img/btn.png) 0 -200px no-repeat;display: block; width: 35px; height: 35px; position: absolute; left: 22px; top: 14px;}
+.list ul li{ float: left; width: 80px; position: relative;}
+.list .collection li{ margin-bottom: 110px; }
+.list .rank{padding-top: 8px;}
+.list .rank li{ padding-left: 12px; width: 300px; font-size: 12px; }
+.list .rank li a{float: left; padding: 5px; }
+.list .rank li b{float: left;padding: 5px; font-weight: bold;}
+.list p img{width: 60px; height: 60px;}
+.list ul li .loc{position: absolute; background: url(img/btn.png) -17px -60px no-repeat; width: 14px; height: 14px; top: 72px; left: 30px; z-index: 6; display: none;}
+
+.intro {position: absolute; background: url(img/btn.png) 0 -80px repeat-x;  height: 60px; padding: 10px;  top: 80px; width: 300px;border-bottom: 1px solid #d9d9d9; box-shadow: 0 2px 3px #f5f5f5}
+.list .collection li:nth-child(4n+1) .intro{left:0;}
+.list .collection li:nth-child(4n+2) .intro{left:-80px; display: none;}
+.list .collection li:nth-child(4n+3) .intro{left:-160px; display: none;}
+.list .collection li:nth-child(4n+4) .intro{left:-240px; display: none;}
+.list .collection li:nth-child(4n+1) .loc{display: block;}
+.intro .face{float: left;margin-top: 4px;}
+.intro .face img{width: 30px; height: 30px; border-radius: 30px;}
+.intro .memo{font-size: 12px; float: left; width: 260px; margin-left: 10px; line-height: 20px; max-height: 40px;overflow: hidden; cursor:pointer}
+.intro .num{clear: both; padding-top: 4px;}
+.intro .num a,.intro .num i{ font-size: 12px; color: #ccc; font-style: normal;}
+.intro .num a{float: right; background: url(img/btn.png) no-repeat;  height: 16px; padding-left: 16px;}
+.intro .num a.hits{background-position: 0 -168px;margin-right: 5px; cursor: default;}
+.intro .num a.fav{background-position: 0 -183px; }
+.intro .num a.fav:hover,.intro .num a.faved{background-position: 0 -292px; }
+.intro .num i{float: left;margin-left: 40px;color: #999;max-width: 120px;overflow: hidden;height: 16px;}
+
+@-webkit-keyframes play{
+	0%   {  -webkit-transform:rotate(0deg);}
+	100% { -webkit-transform:rotate(360deg);}
+}
+.player .cd .pausing{-webkit-animation-play-state:paused ;}
+.info{position: absolute;top: 2px;text-align: left; padding-left: 4px; font-size: 11px; color: #999; display: none;width: 270px;}
+.lyric{text-align: center; line-height: 30px; cursor: pointer;}
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+
+.list .rank,.list .radio,.list .singer{display: none}
+.search{display: none}
+li.star p,li.star img{border-radius: 30px;}
+
+.login{z-index: 30;position: absolute;top: 70px;background-color: #fcfcfd;padding: 40px 30px; width: 300px; display: none;}
+.login p{line-height: 30px;}
+.login img{width: 120px;}
+.login p a{display: inline;font-size: 12px; margin-left: 10px;}
+.login .close{position: absolute;top: 0;left: 300px;z-index: 100;}
+
+
+.loading{position: absolute;z-index: 40;top: 0;display: none;  height: 5px; left: 120px;}
+
+
+.author{cursor: pointer; display: inline;}
+
+.tips{
+	position: absolute;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.5;
+	text-align: center;
+	top: 200px;
+	display: none;
+	padding: 2px 5px;
+	font-size: 12px;
+}
+
+.notify-wrap{
+	width: 300px;
+	height: 40px;
+	
+	overflow: hidden;
+}
+.notify-wrap p img{
+	width: 30px;
+	height: 30px;
+}
+.notify-wrap .left{
+	padding: 5px 10px;
+	float: left;
+}
+
+.notify-wrap p{
+	font-size: 12px;
+	line-height: 40px;
+}
+.song{
+	width: 320px;
+	height: 260px;
+	padding-top: 4px;
+	margin-left:350px;
+	z-index: 10;
+	position: absolute;
+	top: 42px;
+	background-color: #fff;
+}
+.song .sider{
+	width: 21px;
+	height: 265px;
+	float: left;
+	border-right: 1px solid #D81817;
+	background: url(img/sider.png) no-repeat -2px 0px;
+	opacity:0.4;
+}
+.song .sider:hover{
+	opacity:0.8;
+}
+.song .songs{
+	margin-left: 4px;
+	float: left;
+}
+
+.song .bar{
+	height: 24px;
+	line-height: 24px;
+}
+.s-author{
+	float: right;
+	font-size: 12px;
+}
+.s-pic{
+	float: right;
+	margin-left: 5px;
+	margin-right: 3px;
+}
+.s-pic img{
+	width: 24px;
+	border-radius: 24px;
+}
+.s-title{
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 50px;
+	background:url(img/title.png) no-repeat 2px 4px;
+	float: left;
+	line-height: 26px;
+	width: 200px;
+height: 26px;
+overflow: hidden;
+}
+.s-wrap{
+	height: 230px;
+	width: 290px;
+}
+.s-list{
+	font-size: 12px;
+	overflow-y: scroll;
+	height: 230px;
+	width: 310px;
+}
+.s-list li span,.s-list li a{
+	float: left;
+}
+.s-btn{
+	width: 32px;
+	height: 29px;
+}
+.s-play{
+	display:none;
+	background:url(img/play.png) 7px 6px no-repeat;
+	width:32px;
+	height:29px;
+}
+.s-btn:hover .s-play{
+	display:block;
+}
+.s-btn:hover .s-index{
+	display:none;
+}
+
+.s-btn .s-index{
+	text-align: center;
+	width: 32px;
+	color: #999;
+}
+.s-list li{
+	height: 29px;
+	width: 290px;
+	line-height: 29px;
+}
+.s-list li:nth-child(odd){
+	background-color: #efefef;
+}
+.s-list .s-name{
+	width: 192px;
+	overflow: hidden;
+	height:29px;
+	cursor:default;
+}
+.s-list .s-singer{
+	width: 64px;
+	overflow: hidden;
+	cursor:default;
+	height:29px;
+}
+.sider{
+	cursor:pointer;
+}
+
+.search .box{text-align: center; padding:30px;}
+.search input{ padding: 3px;}
+.search button{ margin-left: 5px; padding: 5px}
+
+
+
+
+
+
+
